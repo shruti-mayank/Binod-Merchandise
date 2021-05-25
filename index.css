@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a{
+    text-decoration: none!important;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    padding: 0px !important;
+}
+
+/* Navbar */
+.navbar{
+    width: 100%;    
+    font-size: 15px;
+    font-weight: 300;
+    background-color: #0D2F4D!important;
+    transition: all 0.3s ease;
+}
+.navbar-brand img{
+    height: 60px;
+    width: 140px;
+    border-radius: 15px;
+}
+.navbar .navbar-nav .nav-link{
+    padding-left: 30px;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    color: #bbbfe9;
+}
+
+.navbar .navbar-nav .nav-link:hover, .navbar .navbar-nav .nav-link:active{
+    color: #fff;
+}
+
+.navbar .navbar-nav .dropdown:hover .dropdown-menu{
+    display: block;
+    padding: 10px 30px 10px 5px!important;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar form{
+    padding-left: 20px!important;
+}
+
+/* Responsive Css */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #search input{
+        width: 430px!important;
+    }
+    .banner-img{
+        height: 550px;
+    }
+    /* carousel */
+    #carouselIndicators .carousel-inner .carousel-item a img{
+        height: 590px;
+        overflow: hidden;
+    }
+
+    #carouselIndicators .carousel-inner .carousel-item a .card-img-overlay h4{
+        font-family: 'Oswald', sans-serif;
+        font-size: 80px;
+        color: #fff;
+    }
+
+    #carouselIndicators .carousel-inner .carousel-item a .card-img-overlay p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        color: #142047;
+        text-decoration: bold;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #search input{
+        width: 430px!important;
+    }
+    .banner-img{
+        height: 550px;
+    }
+    /* carousel */
+    #carouselIndicators .carousel-inner .carousel-item a img{
+        height: 590px;
+        overflow: hidden;
+    }
+
+    #carouselIndicators .carousel-inner .carousel-item a .card-img-overlay h4{
+        font-family: 'Oswald', sans-serif;
+        font-size: 80px;
+        color: #fff;
+    }
+
+    #carouselIndicators .carousel-inner .carousel-item a .card-img-overlay p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        color: #142047;
+        text-decoration: bold;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .banner-img{
+        height: 200px;
+        overflow: hidden;
+    }
+    /* carousel */
+    #carouselIndicators .carousel-inner .carousel-item a img{
+        height: 350px;
+        overflow: hidden;
+    }
+
+    #carouselIndicators .carousel-inner .carousel-item a .card-img-overlay h4{
+        font-family: 'Oswald', sans-serif;
+        font-size: 35px;
+        color: #fff;
+    }
+
+    #carouselIndicators .carousel-inner .carousel-item a .card-img-overlay p{
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        color: #142047;
+        text-decoration: bold;
+    }
+}
+
+.dropdown-menu a:hover{
+    background-color: #fff;
+    color: #377CB8;
+}
+
+.navbar form .form-control{
+    font-family: 'roboto', sans-serif;
+    width: 100%!important;
+}
+
+.navbar form button{
+    background-color: #fff!important;
+    color: #0D2F4D!important;
+    margin-left: -5px;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar form button:hover, .navbar form button:focus{
+    background-color: #fff;
+    color: #19568b!important;
+    border: 1px solid #fff;
+}
+
+/* Offer section */
+.row .card{
+    border: 0px!important;    
+    padding: 30px 20px 0px 20px;
+}
+.row .card .card-img-top{
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    margin-left: 100px!important;
+}
+
+.row .card .card-body h5{
+    font-family: 'Oswald', sans-serif;
+}
+
+.row .card .card-body p{
+    font-family: 'roboto', sans-serif;
+}
+
+.row .card:hover{
+    cursor: pointer;
+}
+
+/* Sections */
+.deals h2, .women h2, .kids h2, .winter h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+}
+
+.deals h2 .btn, .women h2 .btn, .kids h2 .btn, .winter h2 .btn{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: #0D2F4D;
+    color: #fff;
+}
+
+.deals h2 .btn:hover, .women h2 .btn:hover, .kids h2 .btn:hover, .winter h2 .btn:hover{
+    background-color: #bbbfe9;
+    color: #142047;
+    transition: .2s ease;
+    padding: 5px 20px;
+}
+
+/* Gallery slider */
+#carouselslider1 .card .card-img, 
+#carouselslider2 .card .card-img, 
+#carouselslider3 .card .card-img, 
+#carouselslider4 .card .card-img, 
+#carouselslider5 .card .card-img, 
+.summer .card .card-img, 
+.winter .card .card-img{
+    height: 250px;
+}
+#carouselslider1 .card .card-img:hover,
+#carouselslider2 .card .card-img:hover, 
+#carouselslider3 .card .card-img:hover,  
+#carouselslider4 .card .card-img:hover,
+#carouselslider5 .card .card-img:hover,
+.summer .card .card-img:hover,
+.winter .card .card-img:hover{
+    display: flex;
+    transform: scale(1.03);
+    transition: 0.5s all ease;
+}
+#carouselslider1 .card .card-body h4, 
+#carouselslider2 .card .card-body h4, 
+#carouselslider3 .card .card-body h4, 
+#carouselslider4 .card .card-body h4,
+#carouselslider5 .card .card-body h4,
+.summer .card .card-body h4,
+.winter .card .card-body h4{
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    color: #111;
+}
+
+#carouselslider1 .card .card-body h4:hover, 
+#carouselslider2 .card .card-body h4:hover, 
+#carouselslider3 .card .card-body h4:hover, 
+#carouselslider4 .card .card-body h4:hover,
+#carouselslider5 .card .card-body h4:hover,
+.summer .card .card-body h4:hover,
+.winter .card .card-body h4:hover{
+    color: #0D2F4D;
+}
+
+#carouselslider1 .card .card-body p, 
+#carouselslider2 .card .card-body p, 
+#carouselslider3 .card .card-body p, 
+#carouselslider4 .card .card-body p,
+#carouselslider5 .card .card-body p,
+.summer .card .card-body p,
+.winter .card .card-body p{
+    font-family: 'Roboto', sans-serif;
+    color: #0D2F4D;
+}
+
+/* dark sections */
+.men h2, .new h2, .summer h2{
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    color: #fff;
+}
+
+.men hr, .new hr, .summer hr{
+    color: #fff;
+}
+
+.men h2 .btn, .new h2 .btn, .summer h2 .btn{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: #143e63;
+    color: #fff;
+}
+
+.men h2 .btn:hover, .new h2 .btn:hover, .summer h2 .btn:hover{
+    background-color: #bbbfe9;
+    color: #142047;
+    transition: .2s ease;
+    padding: 5px 20px;
+}
+
+/*Footer*/
+footer .top-footer{
+    background-color: #0a2841;
+    font-size: 15px;
+  }
+  
+  footer .top-footer .logo img{
+    background-position:center;
+    height: 90px;
+    width: 170px;
+    border-radius: 20px;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  footer .top-footer p{
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+  }
+
+  footer .top-footer ul li a{
+      color: #bbbfe9;
+      font-size: 15px;
+      font-family: 'Roboto', sans-serif;
+  }
+
+footer .top-footer ul li a:hover{
+    color: #fff;
+}
+  
+  footer .bottom-footer{
+    background-color: #0D2F4D;
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300px;
+    color: white;
+  }
+
+footer form label{
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+footer form input, footer form textarea{
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+}
+
+#formsubmit{
+    background-color: #213a8b;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+}
+
+#formsubmit:hover{
+    background-color: #4885bb;
+    color: #0a2841;
+}

@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Icon  -->
+     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Css file -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Favicon with title -->
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+    <title>Binod Merchandise</title>
+  </head>
+  <body>
+      <div class="jumbotron-fluid">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 fixed-top mb-5">
+            <div class="container">
+              <!-- Logo -->
+              <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Binod Merchandise"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                  <!-- search button -->
+                  <form class="d-flex" id="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-large" type="submit"><i class="fas fa-search"></i></button>
+                  </form>
+                  <!-- navlinks -->
+                  <ul class="navbar-nav px-lg-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#" id="navbarScrollingDropdown">
+                        Category
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="men.html">Men's Fashion</a></li>
+                        <li><a class="dropdown-item" href="women.html">Women's Fashion</a></li>
+                        <li><a class="dropdown-item" href="kid.html">Kids Fashion</a></li>
+                        <li><a class="dropdown-item" href="winter.html">Winter Collection</a></li>
+                        <li><a class="dropdown-item" href="summer.html">Summer Collection</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Sign In</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Offer section -->
+        <div class="container mt-5 pt-4">
+          <div class="row">
+            <div class="col-md-3">
+              <a href="deals.html" class="text-dark">
+                <div class="card">
+                  <img src="images/shirts.jpg" alt="shirts" class="card-img-top img-fluid img-responsive d-flex flex-column justify-content-center">
+                  <div class="card-body d-flex flex-column justify-content-center text-center">
+                    <h5>Best Offers of the Day</h5>
+                    <p>Upto 85% off</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="men.html" class="text-dark">
+                <div class="card">
+                  <img src="images/men.jpg" alt="shirts" class="card-img-top img-fluid img-responsive d-flex flex-column justify-content-center">
+                  <div class="card-body d-flex flex-column justify-content-center text-center">
+                    <h5>Men's Collection</h5>
+                    <p>Upto 50% off</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="women.html" class="text-dark">
+                <div class="card">
+                  <img src="images/women.jpg" alt="shirts" class="card-img-top img-fluid img-responsive d-flex flex-column justify-content-center">
+                  <div class="card-body d-flex flex-column justify-content-center text-center">
+                    <h5>Women's Collection</h5>
+                    <p>Upto 50% off</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="kid.html" class="text-dark">
+                <div class="card">
+                  <img src="images/kids.jpg" alt="shirts" class="card-img-top img-fluid img-responsive d-flex flex-column justify-content-center">
+                  <div class="card-body d-flex flex-column justify-content-center text-center">
+                    <h5>Kids Collection</h5>
+                    <p>Upto 60% off</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /.Offer -->
+
+        <!-- slider -->
+        <div id="carouselIndicators" class="carousel slide pb-4" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="winter.html">                
+                <img src="images/winter.jpg" class="d-block w-100 card-img banner-img" alt="Winter sale">
+                <div class="card-img-overlay container d-flex flex-column justify-content-start pt-md-5">
+                  <div class="container">
+                    <h4>Winter Sale</h4>
+                    <p><b>Grab your favourite winter outfits at lowest price.</b></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="kid.html">                
+                <img src="images/kids_banner.jpg" class="d-block w-100 card-img banner-img" alt="Kids Collection">
+                <div class="card-img-overlay container d-flex flex-column justify-content-center">
+                  <div class="container">
+                    <h4>Kids Collection</h4>
+                    <p><b>Style your Kids with new trendy collections.</b></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="new.html">
+                <img src="images/new.jpg" class="d-block w-100 card-img banner-img" alt="New Collection">
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- /.slider -->
+
+        <!-- Best Deals -->
+        <div class="container deals py-5">
+          <h2><i class="far fa-clock" style="color: #0e395c;"></i> Best deals Of the Day<span style="float: right;"><a href="deals.html"><button class="d-flex flex-column btn btn-block justify-content-end px-3">View All</button></a></span></h2>          
+          <hr>
+          <!-- Gallery Slider -->
+          <div id="carouselslider1" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="mens_shirt.html">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/shirts.jpg" class="card-img" alt="Men's Shirt">
+                        <div class="card-body text-center">
+                          <h4>Men's Shirts</h4>
+                          <p>Upto 60% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="mens_jackets.html">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/jackets.jpg" class="card-img" alt="Jackets">
+                        <div class="card-body text-center">
+                          <h4>Leather Jackets</h4>
+                          <p>Upto 40% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="women_dress.html">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/dresses.jpg" class="card-img" alt="Womens Dresses">
+                        <div class="card-body text-center">
+                          <h4>Women's Dresses</h4>
+                          <p>Upto 50% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="kid.html">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/kids.jpg" class="card-img" alt="Kids Collection">
+                        <div class="card-body text-center">
+                          <h4>Kids Collection</h4>
+                          <p>Upto 60% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="women_ethnic.html">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/ethnic.jpg" class="card-img" alt="Women's Ethnic Wear">
+                        <div class="card-body text-center">
+                          <h4>Women's Ethnic Wear</h4>
+                          <p>Upto 70% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="mens_jeans.html">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/jeans.jpg" class="card-img" alt="Jeans">
+                        <div class="card-body text-center">
+                          <h4>Jeans</h4>
+                          <p>Upto 45% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselslider1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselslider1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- /.Gallery Slider -->
+        </div>
+        <!-- /.Best Deals -->
+
+        <!-- New Collection -->
+        <div class="container-fluid" style="background-color: #0a2841;">
+          <div class="container new py-5">
+            <h2 style="cursor: pointer;">New Arrivals<span style="float: right;"><a href="new.html"><button class="d-flex flex-column btn btn-block justify-content-end px-3">View All</button></a></span></h2>          
+            <hr>
+            <!-- Gallery Slider -->
+            <div id="carouselslider2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <a href="women_top.html">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/new_tops.jpg" class="card-img" alt="Women's tops">
+                          <div class="card-body text-center">
+                            <h4>Women's Tops</h4>
+                            <p>Starting form Rs. 300</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="kids_dress.html">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/New_dress.jpg" class="card-img" alt="Kids dress">
+                          <div class="card-body text-center">
+                            <h4>Girl's Dress</h4>
+                            <p>Upto 40% off</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="mens_jeans.html">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/men_pants.jpg" class="card-img" alt="Men's pants">
+                          <div class="card-body text-center">
+                            <h4>Men's Pants</h4>
+                            <p>Upto 50% off</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <a href="mens_shirt.html">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/about.jpg" class="card-img" alt="Men's Shirt">
+                          <div class="card-body text-center">
+                            <h4>Men's Shirts</h4>
+                            <p>Upto 60% off</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/new_footwear.jpg" class="card-img" alt="Kids Footwear">
+                          <div class="card-body text-center">
+                            <h4>Kids Footwear</h4>
+                            <p>Upto 35% off</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/new_skirts.jpg" class="card-img" alt="women's skirt">
+                          <div class="card-body text-center">
+                            <h4>Women's Skirts</h4>
+                            <p>Upto 45% off</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselslider2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselslider2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- /.Gallery Slider -->
+          </div>
+        </div>
+        <!-- /.New Collection -->
+
+        <!-- kids Collection -->
+        <div class="container kids py-5">
+          <h2>Kids Collection<span style="float: right;"><a href="kid.html"><button class="d-flex flex-column btn btn-block justify-content-end px-3">View All</button></a></span></h2>          
+          <hr>
+          <!-- Gallery Slider -->
+          <div id="carouselslider3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/kids_dress.jpg" class="card-img" alt="Kids Dress">
+                        <div class="card-body text-center">
+                          <h4>Kids Dresses</h4>
+                          <p>Starting from Rs. 200</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/kids_winter.jpg" class="card-img" alt="Kids_winter wear">
+                        <div class="card-body text-center">
+                          <h4>Winter Wear</h4>
+                          <p>Upto 40% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/kids_tee.jpg" class="card-img" alt="Kids tee">
+                        <div class="card-body text-center">
+                          <h4>Kids Tee</h4>
+                          <p>Upto 50% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/kids_shoes.jpg" class="card-img" alt="Kids Shoes">
+                        <div class="card-body text-center">
+                          <h4>Kids Footwear</h4>
+                          <p>Starting from Rs. 1000</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/kids_ethnic.jpg" class="card-img" alt="kids Ethnic Wear">
+                        <div class="card-body text-center">
+                          <h4>Kids Ethnic Wear</h4>
+                          <p>Upto 70% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/kids_skirt.jpg" class="card-img" alt="Skirts">
+                        <div class="card-body text-center">
+                          <h4>Shorts, Skorts and Skirts</h4>
+                          <p>Upto 50% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselslider3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselslider3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- /.Gallery Slider -->
+        </div>
+        <!-- /.Kids Collection -->
+
+        <!-- Men's Collection -->
+        <div class="container-fluid" style="background-color: #0a2841;">
+          <div class="container men py-5">
+            <h2 style="cursor: pointer;">Men's Collection<span style="float: right;"><a href="men.html"><button class="d-flex flex-column btn btn-block justify-content-end px-3">View All</button></a></span></h2>          
+            <hr>
+            <!-- Gallery Slider -->
+            <div id="carouselslider4" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <a href="mens_shoes.html">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/mens_shoes.jpg" class="card-img" alt="Men's shoes">
+                          <div class="card-body text-center">
+                            <h4>Men's Footwear</h4>
+                            <p>Upto 40% off</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="mens_jackets.html">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/mens_jacket.jpg" class="card-img" alt="Jackets">
+                          <div class="card-body text-center">
+                            <h4>Men's Jackets</h4>
+                            <p>Upto 40% off</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="mens_hoodie.html">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/hoodie.jpg" class="card-img" alt="hoodie">
+                          <div class="card-body text-center">
+                            <h4>Hoodies's & Sweatshirts</h4>
+                            <p>Upto 50% off</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <a href="mens_shirt.html">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/shirts.jpg" class="card-img" alt="Men's Shirt">
+                          <div class="card-body text-center">
+                            <h4>Men's Shirts</h4>
+                            <p>Upto 60% off</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="men_ethnic.html">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/mens_ethnic.jpg" class="card-img" alt="Men's Ethnic Wear">
+                          <div class="card-body text-center">
+                            <h4>Men's Ethnic Wear</h4>
+                            <p>Upto 60% off</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-md-4">
+                      <a href="mens_jeans.html">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/jeans1.jpg" class="card-img" alt="Jeans">
+                          <div class="card-body text-center">
+                            <h4>Jeans & Pants</h4>
+                            <p>Upto 45% off</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselslider4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselslider4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- /.Gallery Slider -->
+          </div>
+        </div>
+        <!-- /.Men's Collection -->
+
+        <!-- Women's Collection -->
+        <div class="container women py-5">
+          <h2>Women's Collection<span style="float: right;"><a href="women.html"><button class="d-flex flex-column btn btn-block justify-content-end px-3">View All</button></a></span></h2>          
+          <hr>
+          <!-- Gallery Slider -->
+          <div id="carouselslider5" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="women_top.html">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/top.jpg" class="card-img" alt="Women's top">
+                        <div class="card-body text-center">
+                          <h4>Tops</h4>
+                          <p>Starting from Rs. 200</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="women_jacket.html">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/women_jacket.jpg" class="card-img" alt="Jackets">
+                        <div class="card-body text-center">
+                          <h4>Jackets</h4>
+                          <p>Upto 40% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="women_dress.html">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/women_dress.jpg" class="card-img" alt="Womens Dresses">
+                        <div class="card-body text-center">
+                          <h4>Women's Dresses</h4>
+                          <p>Upto 50% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/women_shoe.jpg" class="card-img" alt="Womens Shoes">
+                        <div class="card-body text-center">
+                          <h4>Women's Footwear</h4>
+                          <p>Starting from Rs. 1000</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="women_ethnic.html">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/ethnic.jpg" class="card-img" alt="Women's Ethnic Wear">
+                        <div class="card-body text-center">
+                          <h4>Women's Ethnic Wear</h4>
+                          <p>Upto 70% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="womens_jeans.html">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/women_jeans.jpg" class="card-img" alt="Jeans">
+                        <div class="card-body text-center">
+                          <h4>Jeans</h4>
+                          <p>Upto 50% off</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselslider5" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselslider5" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- /.Gallery Slider -->
+        </div>
+        <!-- /.Women's Collection -->
+
+        <!-- Summer Collection -->
+        <div class="container-fluid" style="background-color: #0a2841;">
+          <div class="container summer py-5">
+            <h2 style="cursor: pointer;"><a href="summer.html" class="text-white">Summer Collection</a></h2>          
+            <hr>
+            <!-- cards -->
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <a href="" class="text-dark">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/mens_summer.png" class="card-img" alt="Mens Summer outfit">
+                          <div class="card-body text-center">
+                            <h4>Men's Wears</h4>
+                            <p>Starting from Rs. 500</p>
+                          </div>
+                        </div>
+                      </a>
+                  </div>
+                  <div class="col-md-4">
+                      <a href="" class="text-dark">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/women_summer.jpg" class="card-img" alt="Women Summer Wear">
+                          <div class="card-body text-center">
+                            <h4>Women Summer Wear</h4>
+                            <p>Starting from Rs. 500</p>
+                          </div>
+                        </div>
+                      </a>
+                  </div>
+                  <div class="col-md-4">
+                      <a href="" class="text-dark">
+                        <div class="card px-0 pt-0 mt-2">
+                          <img src="images/kids_summer.jpg" class="card-img" alt="Kids Summer Wear">
+                          <div class="card-body text-center">
+                            <h4>Kids Wear</h4>
+                            <p>Starting from Rs. 500</p>
+                          </div>
+                        </div>
+                      </a>
+                  </div>
+              </div>
+            </div>
+            <!-- /.cards -->
+          </div>
+        </div>
+        <!-- /.Summer Collection -->
+
+        <!-- Winter Collection -->
+        <div class="container winter py-5">
+          <h2><a href="winter.html" class="text-dark">Winter Collection</a></h2>          
+          <hr>
+          <!-- cards -->
+          <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="" class="text-dark">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/mens_winter.jpg" class="card-img" alt="Mens winter outfit">
+                        <div class="card-body text-center">
+                          <h4>Men's Wears</h4>
+                          <p>Starting from Rs. 500</p>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="" class="text-dark">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/women_winter.jpg" class="card-img" alt="Women Winter Wear">
+                        <div class="card-body text-center">
+                          <h4>Women Summer Wear</h4>
+                          <p>Starting from Rs. 500</p>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="kids_winter.html" class="text-dark">
+                      <div class="card px-0 pt-0 mt-2">
+                        <img src="images/kids_winter.jpg" class="card-img" alt="Kids Winter Wear">
+                        <div class="card-body text-center">
+                          <h4>Kids Wear</h4>
+                          <p>Starting from Rs. 500</p>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+            </div>
+          </div>
+          <!-- /.cards -->
+        </div>
+        <!-- /.Winter Collection -->
+
+        <!-- Footer -->
+        <footer style="background-color: #0a2841;">
+          <!-- Top footer -->
+           <div class="top-footer py-4">
+               <div class="container pt-4">
+                   <div class="row text-white">
+                       <div class="col-md-4">
+                          <a href="#" class="logo"><img src="images/logo.png" alt="Binod Merchandise"></a>
+                          <p class="pt-4 pl-md-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum iure non vero ab, a fuga unde, vitae harum assumenda tempora itaque incidunt blanditiis illo voluptatibus perferendis molestias! Impedit, voluptatibus sed.</p>
+                          <ul style="list-style-type: none; padding-top: 7px!important;">
+                            <li class="d-inline-block px-2"><a href=""><i class="fab fa-facebook" style="font-size: 25px;"></i></a></li>
+                            <li class="d-inline-block px-2"><a href=""><i class="fab fa-twitter" style="font-size: 25px;"></i></a></li>
+                            <li class="d-inline-block px-2"><a href=""><i class="fab fa-instagram" style="font-size: 25px;"></i></a></li>
+                            <li class="d-inline-block px-2"><a href=""><i class="fab fa-linkedin" style="font-size: 25px;"></i></a></li>
+                          </ul>
+                        </div> 
+                        <div class="col-md-1"></div>
+                        <div class="col-md-3 pl-md-5">
+                          <!-- Useful Links -->
+                          <h6 class="" style="font-size: 25px; font-family: 'Oswald', sans-serif;">Useful Links</h6>
+                          <ul class="py-3" style="list-style-type: none; color: #fff;">
+                            <li class="pt-md-2"><a href="about.html">About</a></li>
+                            <li class="pt-md-2"><a href="contact.html">Contact Us</a></li>
+                            <li class="pt-md-2"><a href="faq.html">FAQ</a></li>
+                            <li class="pt-md-2"><a href="#">Privacy Policy</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-md-3 pl-md-5">
+                          <!-- Useful Links -->
+                          <h6 class="pb-4" style="font-size: 25px; font-family: 'Oswald', sans-serif;">Any Queries? Contact Us</h6>
+                          <form class="contact-form pb-5" id="contactForm">
+                              <!-- <label style="font-family: 'Oswald',sans-serif; font-size: 20px;">Name:</label> -->
+                              <input type="text" name="name" class="name form-control" placeholder="Enter your Name"><br>
+                              <!-- <label style="font-family: 'Oswald',sans-serif; font-size: 20px;">Email:</label> -->
+                              <input type="text" name="email" class="email form-control" placeholder="Enter your email address"><br>
+                              <!-- <label style="font-family: 'Oswald',sans-serif; font-size: 20px;">Message</label> -->
+                              <textarea name="message" class="message form-control" rows="4" placeholder="Enter your message"></textarea>
+                              <button type="submit" name="submit" class="btn btn-large px-3 mt-3" id="formsubmit">Send</button>
+                          </form>
+                        </div>
+                   </div>
+               </div>
+           </div>
+          <!-- /Top footer -->
+       
+          <!-- Bottom footer -->
+          <div class="bottom-footer">
+              <div class="container">
+                  <div class="d-flex flex-row justify-content-center py-2">©2021. Developed by Shruti Mayank. All Right Reserved.</div>
+              </div>
+          </div>
+          <!-- /Bottom footer -->
+       </footer>
+        <!-- /.Footer -->
+
+      </div>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <script src="index.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  </body>
+</html>
